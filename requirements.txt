@@ -1,0 +1,14 @@
+streamlit
+pymupdf
+camelot-py[cv]
+opencv-python
+sentence-transformers
+faiss-cpu
+torch
+torchvision
+transformers
+pillow
+pandas
+numpy
+tqdm
+openai
