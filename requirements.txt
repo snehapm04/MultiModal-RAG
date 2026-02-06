@@ -1,3 +1,4 @@
+flask
 streamlit
 pymupdf
 camelot-py[cv]
@@ -12,3 +13,8 @@ pandas
 numpy
 tqdm
 openai
+langchain
+langchain-community
+langchain-classic
+langchain-text-splitters
+ollama

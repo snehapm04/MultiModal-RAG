@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal RAG Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>🤖 RAG Chat</h1>
+                <p>Document Q&A</p>
+            </div>
+            
+            <div class="upload-section">
+                <label class="upload-label">
+                    <input type="file" id="pdfInput" accept=".pdf" multiple hidden>
+                    <span class="upload-btn">📤 Upload PDFs</span>
+                </label>
+                <div id="uploadStatus" class="upload-status"></div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>💡 Tip: Upload PDFs to get started</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <h2>Chat with Your Documents</h2>
+                <span id="docCount" class="doc-count">No docs loaded</span>
+            </div>
+
+            <div id="chatBox" class="chat-box">
+                <div class="welcome-message">
+                    <h3>Welcome to Multimodal RAG</h3>
+                    <p>Upload PDFs and ask questions about their content.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <form id="chatForm" class="chat-form">
+                    <input
+                        type="text"
+                        id="userInput"
+                        class="chat-input"
+                        placeholder="Ask a question about your documents..."
+                        autocomplete="off"
+                        disabled
+                    />
+                    <button type="submit" id="sendBtn" class="send-btn" disabled>
+                        ➤
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
